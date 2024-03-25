@@ -1,15 +1,20 @@
 package fr.univamu.iut.restaurant;
 
+import java.time.LocalTime;
+import java.util.Date;
+
 public class Menu {
 
     int id;
-    String nom;
+    String author;
     String description;
+
+    Date creation_date;
     double prix;
 
 
-    public Menu(String nom, String description, double prix) {
-        this.nom = nom;
+    public Menu(String author, String description, double prix) {
+        this.author = author;
         this.description = description;
         this.prix = prix;
     }
@@ -19,7 +24,7 @@ public class Menu {
     }
 
     public String getNom() {
-        return nom;
+        return author;
     }
 
     public String getDescription() {
@@ -30,12 +35,20 @@ public class Menu {
         return prix;
     }
 
+    public Date getCreation_date() {
+        return creation_date;
+    }
+
+    public void setCreation_date(LocalTime creation_date) {
+        this.creation_date = creation_date;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNom(String author) {
+        this.author = author;
     }
 
     public void setDescription(String description) {
@@ -50,7 +63,7 @@ public class Menu {
     public String toString() {
         return "Menu{" +
                 "id=" + id +
-                ", nom='" + nom + '\'' +
+                ", author='" + author + '\'' +
                 ", description='" + description + '\'' +
                 ", prix=" + prix +
                 '}';

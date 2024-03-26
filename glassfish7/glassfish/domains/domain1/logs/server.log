@@ -8501,3 +8501,483 @@ file:/amuhome/a22009311/IdeaProjects/book/glassfish7/glassfish/domains/domain1/g
 [2024-03-18T17:30:21.105697+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=22 _ThreadName=GlassFish Shutdown Hook] [levelValue: 800] [[
   Completed shutdown of GlassFish runtime]]
 
+[2024-03-26T20:05:38.959945+01:00] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk-21\bin\java.exe
+-cp
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2024-03-26T19:05:38.392938500Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/server.policy
+-Djava.security.auth.login.config=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1
+-Dcom.sun.aas.installRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish
+-Djava.library.path=C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib;C:/Program Files/Java/jdk-21/bin;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Python312/Scripts;C:/Python312;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit;C:/Program Files (x86)/Touch Portal/plugins/adb/platform-tools;C:/Windows/System32/OpenSSH;C:/msys64/mingw64/bin;C:/Program Files/Git/cmd;C:/ProgramData/chocolatey/bin;C:/Program Files/dotnet;C:/tools/php82;C:/ProgramData/ComposerSetup/bin;C:/Program Files/Git LFS;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5/bin;C:/Program Files/nodejs;C:/Program Files/MongoDB/Server/7.0/bin;C:/Program Files/PuTTY;C:/Program Files/Java/jdk-19;C:/Users/Thibault/AppData/Local/Microsoft/WindowsApps;C:/Users/Thibault/AppData/Local/Programs/Microsoft VS Code/bin;C:/msys64;C:/Users/Thibault/AppData/Local/GitHubDesktop/bin;C:/Users/Thibault/AppData/Roaming/Composer/vendor/bin;C:/Users/Thibault/AppData/Roaming/npm;C:/Users/Thibault/AppData/Local/Programs/mongosh;C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2024-03-26T20:07:30.383800+01:00] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk-21\bin\java.exe
+-cp
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2024-03-26T19:07:29.758785Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/server.policy
+-Djava.security.auth.login.config=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1
+-Dcom.sun.aas.installRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish
+-Djava.library.path=C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib;C:/Program Files/Java/jdk-21/bin;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Python312/Scripts;C:/Python312;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit;C:/Program Files (x86)/Touch Portal/plugins/adb/platform-tools;C:/Windows/System32/OpenSSH;C:/msys64/mingw64/bin;C:/Program Files/Git/cmd;C:/ProgramData/chocolatey/bin;C:/Program Files/dotnet;C:/tools/php82;C:/ProgramData/ComposerSetup/bin;C:/Program Files/Git LFS;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5/bin;C:/Program Files/nodejs;C:/Program Files/MongoDB/Server/7.0/bin;C:/Program Files/PuTTY;C:/Program Files/Java/jdk-19;C:/Users/Thibault/AppData/Local/Microsoft/WindowsApps;C:/Users/Thibault/AppData/Local/Programs/Microsoft VS Code/bin;C:/msys64;C:/Users/Thibault/AppData/Local/GitHubDesktop/bin;C:/Users/Thibault/AppData/Roaming/Composer/vendor/bin;C:/Users/Thibault/AppData/Roaming/npm;C:/Users/Thibault/AppData/Local/Programs/mongosh;C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=true,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+true
+-asadmin-classpath
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2024-03-26T20:07:34.421838+01:00] [GF 7.0.13] [INFO] [] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Using property file: C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\config\logging.properties]]
+
+[2024-03-26T20:07:34.470835+01:00] [GF 7.0.13] [INFO] [NCLS-LOGGING-00009] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae)]]
+
+[2024-03-26T20:07:34.974359+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 73 ms - bound to [/0.0.0.0:8080]]]
+
+[2024-03-26T20:07:35.015362+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 12 ms - bound to [/0.0.0.0:8181]]]
+
+[2024-03-26T20:07:35.023361+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 4 ms - bound to [/0.0.0.0:4848]]]
+
+[2024-03-26T20:07:35.150364+01:00] [GF 7.0.13] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2024-03-26T20:07:35.244361+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-26T20:07:35.246360+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-26T20:07:35.253364+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2024-03-26T20:07:35.591568+01:00] [GF 7.0.13] [SEVERE] [NCLS-CORE-00043] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 1000] [[
+  Application previously deployed is not at its original location any more: file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/]]
+
+[2024-03-26T20:07:35.619581+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2024-03-26T20:07:35.763724+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 65 ms - bound to [/0.0.0.0:3700]]]
+
+[2024-03-26T20:07:35.772736+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae) startup time: Embedded (3 475 ms), startup services (1 440 ms), total (4 915 ms)]]
+
+[2024-03-26T20:07:35.777727+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00018] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Total startup time including CLI: 6 018 ms]]
+
+[2024-03-26T20:07:36.272879+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=67 _ThreadName=Thread-7] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Pc-De-Thibault:8686/jndi/rmi://Pc-De-Thibault:8686/jmxrmi]]
+
+[2024-03-26T20:07:36.275874+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=33 _ThreadName=FelixStartLevel] [levelValue: 800] [[
+  C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2024-03-26T20:07:36.290880+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=33 _ThreadName=FelixStartLevel] [levelValue: 800] [[
+  Root path does not exist: C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\autodeploy\bundles]]
+
+[2024-03-26T20:08:44.739341+01:00] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk-21\bin\java.exe
+-cp
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2024-03-26T19:08:44.143339800Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/server.policy
+-Djava.security.auth.login.config=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1
+-Dcom.sun.aas.installRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish
+-Djava.library.path=C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib;C:/Program Files/Java/jdk-21/bin;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Python312/Scripts;C:/Python312;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit;C:/Program Files (x86)/Touch Portal/plugins/adb/platform-tools;C:/Windows/System32/OpenSSH;C:/msys64/mingw64/bin;C:/Program Files/Git/cmd;C:/ProgramData/chocolatey/bin;C:/Program Files/dotnet;C:/tools/php82;C:/ProgramData/ComposerSetup/bin;C:/Program Files/Git LFS;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5/bin;C:/Program Files/nodejs;C:/Program Files/MongoDB/Server/7.0/bin;C:/Program Files/PuTTY;C:/Program Files/Java/jdk-19;C:/Users/Thibault/AppData/Local/Microsoft/WindowsApps;C:/Users/Thibault/AppData/Local/Programs/Microsoft VS Code/bin;C:/msys64;C:/Users/Thibault/AppData/Local/GitHubDesktop/bin;C:/Users/Thibault/AppData/Roaming/Composer/vendor/bin;C:/Users/Thibault/AppData/Roaming/npm;C:/Users/Thibault/AppData/Local/Programs/mongosh;C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=true,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+true
+-asadmin-classpath
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2024-03-26T20:12:51.451953+01:00] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk-21\bin\java.exe
+-cp
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2024-03-26T19:12:50.664946600Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/server.policy
+-Djava.security.auth.login.config=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1
+-Dcom.sun.aas.installRoot=C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish
+-Djava.library.path=C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib;C:/Program Files/Java/jdk-21/bin;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Python312/Scripts;C:/Python312;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit;C:/Program Files (x86)/Touch Portal/plugins/adb/platform-tools;C:/Windows/System32/OpenSSH;C:/msys64/mingw64/bin;C:/Program Files/Git/cmd;C:/ProgramData/chocolatey/bin;C:/Program Files/dotnet;C:/tools/php82;C:/ProgramData/ComposerSetup/bin;C:/Program Files/Git LFS;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5;C:/apache-maven-3.9.5-bin/apache-maven-3.9.5/bin;C:/Program Files/nodejs;C:/Program Files/MongoDB/Server/7.0/bin;C:/Program Files/PuTTY;C:/Program Files/Java/jdk-19;C:/Users/Thibault/AppData/Local/Microsoft/WindowsApps;C:/Users/Thibault/AppData/Local/Programs/Microsoft VS Code/bin;C:/msys64;C:/Users/Thibault/AppData/Local/GitHubDesktop/bin;C:/Users/Thibault/AppData/Roaming/Composer/vendor/bin;C:/Users/Thibault/AppData/Roaming/npm;C:/Users/Thibault/AppData/Local/Programs/mongosh;C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2024-03-26T20:12:55.409950+01:00] [GF 7.0.13] [INFO] [] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Using property file: C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\config\logging.properties]]
+
+[2024-03-26T20:12:55.465956+01:00] [GF 7.0.13] [INFO] [NCLS-LOGGING-00009] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae)]]
+
+[2024-03-26T20:12:56.074954+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 123 ms - bound to [/0.0.0.0:8080]]]
+
+[2024-03-26T20:12:56.136953+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 30 ms - bound to [/0.0.0.0:8181]]]
+
+[2024-03-26T20:12:56.190954+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 44 ms - bound to [/0.0.0.0:4848]]]
+
+[2024-03-26T20:12:56.399952+01:00] [GF 7.0.13] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2024-03-26T20:12:56.477960+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-26T20:12:56.479959+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-26T20:12:56.487953+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2024-03-26T20:12:56.842953+01:00] [GF 7.0.13] [SEVERE] [NCLS-CORE-00043] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 1000] [[
+  Application previously deployed is not at its original location any more: file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/]]
+
+[2024-03-26T20:12:56.871954+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2024-03-26T20:12:56.908953+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 5 ms - bound to [/0.0.0.0:3700]]]
+
+[2024-03-26T20:12:56.917953+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae) startup time: Embedded (3 358 ms), startup services (1 607 ms), total (4 965 ms)]]
+
+[2024-03-26T20:12:56.921953+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00018] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Total startup time including CLI: 6 257 ms]]
+
+[2024-03-26T20:12:57.246958+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=67 _ThreadName=Thread-7] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Pc-De-Thibault:8686/jndi/rmi://Pc-De-Thibault:8686/jmxrmi]]
+
+[2024-03-26T20:12:57.267958+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=33 _ThreadName=FelixStartLevel] [levelValue: 800] [[
+  C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2024-03-26T20:12:57.273953+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=33 _ThreadName=FelixStartLevel] [levelValue: 800] [[
+  Root path does not exist: C:\Users\Thibault\OneDrive\Bureau\workspace\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\autodeploy\bundles]]
+
+[2024-03-26T20:13:02.587918+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=100 _ThreadName=pool-10-thread-1] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 5 ms - bound to [/0.0.0.0:8080]]]
+
+[2024-03-26T20:13:02.599921+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=100 _ThreadName=pool-10-thread-1] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 3 ms - bound to [/0.0.0.0:8181]]]
+
+[2024-03-26T20:13:07.072916+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-03-26T20:13:07.075929+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-03-26T20:13:07.077919+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2024-03-26T20:13:07.115923+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2024-03-26T20:13:07.122920+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2024-03-26T20:13:07.735919+01:00] [GF 7.0.13] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2024-03-26T20:13:07.736920+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2024-03-26T20:13:07.881918+01:00] [GF 7.0.13] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=56 _ThreadName=admin-listener(2)] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2024-03-26T20:13:08.299917+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2024-03-26T20:13:08.300916+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2024-03-26T20:13:08.303918+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2024-03-26T20:13:08.336924+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2024-03-26T20:13:08.958923+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@57fa1996[name=unknown], urls=[
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/classes/
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/lib/console-core-7.0.13.jar
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/__admingui/
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/woodstock-webui-jsf-suntheme-6.0.1.jar
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/dojo-ajax-nodemo-1.12.4.jar
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/woodstock-webui-jsf-6.0.1.jar
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/json-2.0.jar
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/prototype-1.7.3.jar
+file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/commons-io-2.15.1.jar
+][delegate=true, context=unknown, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=21, pathTimestamps.size=1, resourceEntryCache.size=0]]]
+
+[2024-03-26T20:13:09.005918+01:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  WELD-000900: 5.1.2 (Final)]]
+
+[2024-03-26T20:13:09.555918+01:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2024-03-26T20:13:11.522916+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Initializing Soteria 3.0.3 for context '']]
+
+[2024-03-26T20:13:11.636937+01:00] [GF 7.0.13] [INFO] [faces.config.listener.version] [jakarta.enterprise.resource.webcontainer.faces.config] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Initialisation de Mojarra 4.0.5 pour le contexte «»]]
+
+[2024-03-26T20:13:12.758935+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2024-03-26T20:13:12.762933+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=119 _ThreadName=Thread-21] [levelValue: 800] [[
+  Loading application __admingui done in 9 943 ms]]
+
+[2024-03-26T20:13:13.434870+01:00] [GF 7.0.13] [WARNING] [] [com.sun.web.security.RealmAdapter] [tid: _ThreadID=58 _ThreadName=admin-listener(4)] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2024-03-26T20:13:15.887877+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=152 _ThreadName=admin-listener(6)] [levelValue: 800] [[
+  Redirecting to &#x2f;]]
+
+[2024-03-26T20:13:16.033873+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=58 _ThreadName=admin-listener(4)] [levelValue: 800] [[
+  Admin Console: Initializing Session Attributes...]]
+
+[2024-03-26T21:11:51.894029+01:00] [GF 7.0.13] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=59 _ThreadName=admin-listener(5)] [levelValue: 800] [[
+  Listening to REST requests at context: /monitoring/domain.]]
+

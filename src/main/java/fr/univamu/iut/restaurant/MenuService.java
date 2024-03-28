@@ -1,7 +1,10 @@
 package fr.univamu.iut.restaurant;
 
+import jakarta.inject.Inject;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
+
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
@@ -10,11 +13,13 @@ import java.util.ArrayList;
  */
 public class MenuService {
 
+
     /**
      * Objet permettant d'accéder au dépôt où sont stockées les informations sur les
      * menus
      */
-    protected MenuRepositoryInterface menuRepo;
+    private MenuRepositoryInterface menuRepo;
+
 
     /**
      * Constructeur permettant d'injecter l'accès aux données
@@ -51,8 +56,9 @@ public class MenuService {
      * @param id id du menu recherché
      * @return une chaîne de caractère contenant les informations au format JSON
      */
-    public String getMenuJSON(int id) {
-
+    public String getMenuJSON(int id) throws SQLException, ClassNotFoundException {
+        menuRepo = new MenuRepositoryMariaDB("jdbc:mariadb://mysql-archilogicieltibo.alwaysdata.net/archilogicieltibo_restaurantmenu",
+                "345226_menu", "Deliveroo$");
         String result = null;
         Menu myMenu = menuRepo.getMenu(id);
 

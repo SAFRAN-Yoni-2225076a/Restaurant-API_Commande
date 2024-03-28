@@ -34,6 +34,8 @@ public class HelloApplication extends Application {
         return db;
     }
 
+
+
     /**
      * Méthode permettant de fermer la connexion à la base de données lorsque
      * l'application est arrêtée

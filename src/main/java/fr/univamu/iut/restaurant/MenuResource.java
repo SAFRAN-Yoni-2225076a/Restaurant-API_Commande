@@ -8,6 +8,8 @@ import jakarta.ws.rs.core.Response;
 import fr.univamu.iut.restaurant.MenuService;
 import fr.univamu.iut.restaurant.MenuRepositoryInterface;
 
+import java.sql.SQLException;
+
 /**
  * Ressource associée aux Menus
  * (point d'accès de l'API REST)
@@ -65,7 +67,7 @@ public class MenuResource {
     @GET
     @Path("{id}")
     @Produces("application/json")
-    public String getMenu(@PathParam("id") int id) {
+    public String getMenu(@PathParam("id") int id) throws SQLException, ClassNotFoundException {
 
         String result = service.getMenuJSON(id);
 
@@ -74,6 +76,15 @@ public class MenuResource {
             throw new NotFoundException();
 
         return result;
+    }
+
+    @GET
+    @Path("/test")
+    @Produces("application/json")
+    public String getTest() {
+
+
+        return "test";
     }
 
     /**

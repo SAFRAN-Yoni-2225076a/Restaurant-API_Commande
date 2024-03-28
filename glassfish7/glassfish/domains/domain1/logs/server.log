@@ -8981,3 +8981,569 @@ file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish
 [2024-03-26T21:11:51.894029+01:00] [GF 7.0.13] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=59 _ThreadName=admin-listener(5)] [levelValue: 800] [[
   Listening to REST requests at context: /monitoring/domain.]]
 
+[2024-03-27T15:02:14.633648+01:00] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  JVM invocation command line:
+/usr/lib/jvm/jdk-20/bin/java
+-cp
+/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2024-03-27T14:02:13.686639553Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/server.policy
+-Djava.security.auth.login.config=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-Dcom.sun.aas.installRoot=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish
+-Djava.library.path=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2024-03-27T15:02:22.626453+01:00] [GF 7.0.13] [INFO] [NCLS-BOOTSTRAP-00035] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Provisioning options have changed, recreating the framework with a clean OSGi storage(aka cache).]]
+
+[2024-03-27T15:02:32.731476+01:00] [GF 7.0.13] [WARNING] [NCLS-BOOTSTRAP-00013] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 900] [[
+  Failed to install file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/deployment-admin.jar.
+org.osgi.framework.BundleException: Unable to cache bundle: file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/deployment-admin.jar
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:3258)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:147)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.BundleProvisioner.install(BundleProvisioner.java:419)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.BundleProvisioner.installBundles(BundleProvisioner.java:185)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.OSGiGlassFishRuntimeBuilder.build(OSGiGlassFishRuntimeBuilder.java:124)
+	at org.glassfish.embeddable.GlassFishRuntime._bootstrap(GlassFishRuntime.java:133)
+	at org.glassfish.embeddable.GlassFishRuntime.bootstrap(GlassFishRuntime.java:96)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain$Launcher.launch(GlassFishMain.java:139)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain.main(GlassFishMain.java:93)
+	at com.sun.enterprise.glassfish.bootstrap.ASMain.main(ASMain.java:31)
+Caused by: java.nio.file.NoSuchFileException: /amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/osgi-cache/felix/bundle54/version0.0/bundle.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:171)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1848)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1285)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:716)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.apache.felix.framework.util.SecureAction.openZipFile(SecureAction.java:802)
+	at org.apache.felix.framework.util.WeakZipFileFactory$WeakZipFile.<init>(WeakZipFileFactory.java:169)
+	at org.apache.felix.framework.util.WeakZipFileFactory$WeakZipFile.<init>(WeakZipFileFactory.java:151)
+	at org.apache.felix.framework.util.WeakZipFileFactory.create(WeakZipFileFactory.java:78)
+	at org.apache.felix.framework.cache.JarRevision.<init>(JarRevision.java:83)
+	at org.apache.felix.framework.cache.BundleArchive.createRevisionFromLocation(BundleArchive.java:804)
+	at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:491)
+	at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:155)
+	at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:457)
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:3254)
+	... 11 more
+]]
+
+[2024-03-27T15:02:34.213905+01:00] [GF 7.0.13] [WARNING] [NCLS-BOOTSTRAP-00013] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 900] [[
+  Failed to install file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/org.eclipse.persistence.oracle.jar.
+org.osgi.framework.BundleException: Unable to cache bundle: file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/org.eclipse.persistence.oracle.jar
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:3258)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:147)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.BundleProvisioner.install(BundleProvisioner.java:419)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.BundleProvisioner.installBundles(BundleProvisioner.java:185)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.OSGiGlassFishRuntimeBuilder.build(OSGiGlassFishRuntimeBuilder.java:124)
+	at org.glassfish.embeddable.GlassFishRuntime._bootstrap(GlassFishRuntime.java:133)
+	at org.glassfish.embeddable.GlassFishRuntime.bootstrap(GlassFishRuntime.java:96)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain$Launcher.launch(GlassFishMain.java:139)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain.main(GlassFishMain.java:93)
+	at com.sun.enterprise.glassfish.bootstrap.ASMain.main(ASMain.java:31)
+Caused by: java.nio.file.NoSuchFileException: /amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/osgi-cache/felix/bundle69/version0.0/bundle.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:171)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1848)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1285)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:716)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.apache.felix.framework.util.SecureAction.openZipFile(SecureAction.java:802)
+	at org.apache.felix.framework.util.WeakZipFileFactory$WeakZipFile.<init>(WeakZipFileFactory.java:169)
+	at org.apache.felix.framework.util.WeakZipFileFactory$WeakZipFile.<init>(WeakZipFileFactory.java:151)
+	at org.apache.felix.framework.util.WeakZipFileFactory.create(WeakZipFileFactory.java:78)
+	at org.apache.felix.framework.cache.JarRevision.<init>(JarRevision.java:83)
+	at org.apache.felix.framework.cache.BundleArchive.createRevisionFromLocation(BundleArchive.java:804)
+	at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:491)
+	at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:155)
+	at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:457)
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:3254)
+	... 11 more
+]]
+
+[2024-03-27T15:02:35.189655+01:00] [GF 7.0.13] [WARNING] [NCLS-BOOTSTRAP-00013] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 900] [[
+  Failed to install file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/shoal-gms-impl.jar.
+org.osgi.framework.BundleException: Unable to cache bundle: file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/shoal-gms-impl.jar
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:3258)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:147)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.BundleProvisioner.install(BundleProvisioner.java:419)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.BundleProvisioner.installBundles(BundleProvisioner.java:185)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.OSGiGlassFishRuntimeBuilder.build(OSGiGlassFishRuntimeBuilder.java:124)
+	at org.glassfish.embeddable.GlassFishRuntime._bootstrap(GlassFishRuntime.java:133)
+	at org.glassfish.embeddable.GlassFishRuntime.bootstrap(GlassFishRuntime.java:96)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain$Launcher.launch(GlassFishMain.java:139)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain.main(GlassFishMain.java:93)
+	at com.sun.enterprise.glassfish.bootstrap.ASMain.main(ASMain.java:31)
+Caused by: java.nio.file.NoSuchFileException: /amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/osgi-cache/felix/bundle78/version0.0/bundle.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:171)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1848)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1285)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:716)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.apache.felix.framework.util.SecureAction.openZipFile(SecureAction.java:802)
+	at org.apache.felix.framework.util.WeakZipFileFactory$WeakZipFile.<init>(WeakZipFileFactory.java:169)
+	at org.apache.felix.framework.util.WeakZipFileFactory$WeakZipFile.<init>(WeakZipFileFactory.java:151)
+	at org.apache.felix.framework.util.WeakZipFileFactory.create(WeakZipFileFactory.java:78)
+	at org.apache.felix.framework.cache.JarRevision.<init>(JarRevision.java:83)
+	at org.apache.felix.framework.cache.BundleArchive.createRevisionFromLocation(BundleArchive.java:804)
+	at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:491)
+	at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:155)
+	at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:457)
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:3254)
+	... 11 more
+]]
+
+[2024-03-27T15:02:47.168788+01:00] [GF 7.0.13] [INFO] [] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Using property file: /amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/logging.properties]]
+
+[2024-03-27T15:02:47.246909+01:00] [GF 7.0.13] [INFO] [NCLS-LOGGING-00009] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae)]]
+
+[2024-03-27T15:02:47.749076+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 58 ms - bound to [/0.0.0.0:8080]]]
+
+[2024-03-27T15:02:47.789227+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 2 ms - bound to [/0.0.0.0:8181]]]
+
+[2024-03-27T15:02:47.798755+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 4 ms - bound to [/0.0.0.0:4848]]]
+
+[2024-03-27T15:02:47.888886+01:00] [GF 7.0.13] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2024-03-27T15:02:47.971925+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-27T15:02:47.978057+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-27T15:02:47.988720+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2024-03-27T15:02:50.492423+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2024-03-27T15:02:50.493388+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2024-03-27T15:02:50.498168+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2024-03-27T15:02:50.542570+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2024-03-27T15:02:50.757152+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-03-27T15:02:50.761440+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-03-27T15:02:50.763080+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2024-03-27T15:02:50.785534+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2024-03-27T15:02:50.787770+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2024-03-27T15:02:51.048282+01:00] [GF 7.0.13] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2024-03-27T15:02:51.049591+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2024-03-27T15:02:51.810667+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@2424cb9d[name=unknown], urls=[
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/classes/
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-3.3.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.32.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-platform-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/waffle-jna-3.3.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/caffeine-2.9.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.10.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/book-1.0-SNAPSHOT/
+][delegate=true, context=unknown, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=37, pathTimestamps.size=9, resourceEntryCache.size=0]]]
+
+[2024-03-27T15:02:51.914329+01:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  WELD-000900: 5.1.2 (Final)]]
+
+[2024-03-27T15:02:52.962451+01:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2024-03-27T15:02:54.026967+01:00] [GF 7.0.13] [INFO] [] [org.eclipse.krazo.servlet.KrazoContainerInitializer] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse Krazo version 3.0.1 started]]
+
+[2024-03-27T15:02:54.048624+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Initializing Soteria 3.0.3 for context '/book-1.0-SNAPSHOT']]
+
+[2024-03-27T15:02:54.940052+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading application [book-1.0-SNAPSHOT] at [/book-1.0-SNAPSHOT]]]
+
+[2024-03-27T15:02:54.947065+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading application book-1.0-SNAPSHOT done in 6 757 ms]]
+
+[2024-03-27T15:02:54.976316+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2024-03-27T15:02:54.993167+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 1 ms - bound to [/0.0.0.0:3700]]]
+
+[2024-03-27T15:02:54.999736+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae) startup time: Embedded (31 499 ms), startup services (8 174 ms), total (39 673 ms)]]
+
+[2024-03-27T15:02:55.002206+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00018] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Total startup time including CLI: 41 315 ms]]
+
+[2024-03-27T15:02:55.412082+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=94 _ThreadName=Thread-12] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://V-PJ-47-146.salsa.univ-amu.fr:8686/jndi/rmi://V-PJ-47-146.salsa.univ-amu.fr:8686/jmxrmi]]
+
+[2024-03-27T15:13:53.847121+01:00] [GF 7.0.13] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=65 _ThreadName=admin-listener(4)] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2024-03-27T15:13:54.705234+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00092] [jakarta.enterprise.system.core] [tid: _ThreadID=124 _ThreadName=Thread-26] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2024-03-27T15:13:54.828425+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=124 _ThreadName=Thread-26] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2024-03-27T15:13:54.849359+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00002] [jakarta.enterprise.system.jmx] [tid: _ThreadID=124 _ThreadName=Thread-26] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2024-03-27T15:13:54.849887+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00001] [jakarta.enterprise.system.jmx] [tid: _ThreadID=124 _ThreadName=Thread-26] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2024-03-27T15:13:55.381969+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=135 _ThreadName=RunLevelControllerThread-1711548834898] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@53e82089[name=/book-1.0-SNAPSHOT], urls=[
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/classes/
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-3.3.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.32.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-platform-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/waffle-jna-3.3.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/caffeine-2.9.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.10.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/book-1.0-SNAPSHOT/
+file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/book-1.0-SNAPSHOT/
+][delegate=true, context=/book-1.0-SNAPSHOT, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=57, pathTimestamps.size=15, resourceEntryCache.size=6]]]
+
+[2024-03-27T15:13:55.906186+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=145 _ThreadName=RunLevelControllerThread-1711548834940] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource(pool-name=__TimerPool,object-type=system-all,jndi-name=jdbc/__TimerPool), GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource(pool-name=DerbyPool,object-type=system-all-req,jndi-name=jdbc/__default), GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool(datasource-classname=org.apache.derby.jdbc.EmbeddedXADataSource,name=__TimerPool,res-type=javax.sql.XADataSource), GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool(is-isolation-level-guaranteed=false,datasource-classname=org.apache.derby.jdbc.ClientDataSource,name=DerbyPool,res-type=javax.sql.DataSource)]]]
+
+[2024-03-27T15:13:56.029604+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00013] [jakarta.enterprise.system.core] [tid: _ThreadID=124 _ThreadName=Thread-26] [levelValue: 800] [[
+  Shutdown procedure finished]]
+
+[2024-03-27T15:13:56.041562+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=21 _ThreadName=GlassFish Shutdown Hook] [levelValue: 800] [[
+  Completed shutdown of GlassFish runtime]]
+
+[2024-03-27T15:14:13.426700+01:00] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  JVM invocation command line:
+/usr/lib/jvm/jdk-20/bin/java
+-cp
+/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2024-03-27T14:14:12.819577653Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/server.policy
+-Djava.security.auth.login.config=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-Dcom.sun.aas.installRoot=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish
+-Djava.library.path=/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2024-03-27T15:14:33.073551+01:00] [GF 7.0.13] [INFO] [] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Using property file: /amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/config/logging.properties]]
+
+[2024-03-27T15:14:33.118272+01:00] [GF 7.0.13] [INFO] [NCLS-LOGGING-00009] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae)]]
+
+[2024-03-27T15:14:34.270780+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 32 ms - bound to [/0.0.0.0:8080]]]
+
+[2024-03-27T15:14:34.310119+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 2 ms - bound to [/0.0.0.0:8181]]]
+
+[2024-03-27T15:14:34.323358+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 1 ms - bound to [/0.0.0.0:4848]]]
+
+[2024-03-27T15:14:34.432327+01:00] [GF 7.0.13] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2024-03-27T15:14:34.587007+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-27T15:14:34.593573+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-03-27T15:14:34.603662+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2024-03-27T15:14:37.263243+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2024-03-27T15:14:37.264112+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2024-03-27T15:14:37.269058+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2024-03-27T15:14:37.309903+01:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2024-03-27T15:14:37.881356+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-03-27T15:14:37.913457+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-03-27T15:14:37.917397+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2024-03-27T15:14:37.957292+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2024-03-27T15:14:37.959946+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2024-03-27T15:14:38.263522+01:00] [GF 7.0.13] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2024-03-27T15:14:38.264524+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2024-03-27T15:14:39.335155+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@7ca16adc[name=unknown], urls=[
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/classes/
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-3.3.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.32.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-platform-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/waffle-jna-3.3.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/caffeine-2.9.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.10.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/book-1.0-SNAPSHOT//
+][delegate=true, context=unknown, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=37, pathTimestamps.size=9, resourceEntryCache.size=0]]]
+
+[2024-03-27T15:14:39.494573+01:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  WELD-000900: 5.1.2 (Final)]]
+
+[2024-03-27T15:14:40.933160+01:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2024-03-27T15:14:42.221573+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Initializing Soteria 3.0.3 for context '/book-1.0-SNAPSHOT']]
+
+[2024-03-27T15:14:42.282921+01:00] [GF 7.0.13] [INFO] [] [org.eclipse.krazo.servlet.KrazoContainerInitializer] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse Krazo version 3.0.1 started]]
+
+[2024-03-27T15:14:43.146659+01:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading application [book-1.0-SNAPSHOT] at [/book-1.0-SNAPSHOT]]]
+
+[2024-03-27T15:14:43.154994+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading application book-1.0-SNAPSHOT done in 8 307 ms]]
+
+[2024-03-27T15:14:43.174227+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2024-03-27T15:14:43.183284+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 1 ms - bound to [/0.0.0.0:3700]]]
+
+[2024-03-27T15:14:43.211801+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae) startup time: Embedded (18 730 ms), startup services (10 278 ms), total (29 008 ms)]]
+
+[2024-03-27T15:14:43.214136+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00018] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Total startup time including CLI: 30 394 ms]]
+
+[2024-03-27T15:14:43.566005+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=83 _ThreadName=Thread-11] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://V-PJ-47-146.salsa.univ-amu.fr:8686/jndi/rmi://V-PJ-47-146.salsa.univ-amu.fr:8686/jmxrmi]]
+
+[2024-03-27T15:44:05.341284+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=21 _ThreadName=GlassFish Shutdown Hook] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2024-03-27T15:44:05.378960+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00002] [jakarta.enterprise.system.jmx] [tid: _ThreadID=21 _ThreadName=GlassFish Shutdown Hook] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2024-03-27T15:44:05.379513+01:00] [GF 7.0.13] [INFO] [NCLS-JMX-00001] [jakarta.enterprise.system.jmx] [tid: _ThreadID=21 _ThreadName=GlassFish Shutdown Hook] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2024-03-27T15:44:05.724877+01:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=120 _ThreadName=RunLevelControllerThread-1711550645386] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@7757a37f[name=/book-1.0-SNAPSHOT], urls=[
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/classes/
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-3.3.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.32.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-platform-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/waffle-jna-3.3.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-2.0.7.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/caffeine-2.9.3.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.10.0.jar
+file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/WEB-INF/lib/jna-5.13.0.jar
+file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/book-1.0-SNAPSHOT//
+file:/amuhome/a22009311/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/book-1.0-SNAPSHOT/
+][delegate=true, context=/book-1.0-SNAPSHOT, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=51, pathTimestamps.size=15, resourceEntryCache.size=6]]]
+
+[2024-03-27T15:44:05.939132+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=121 _ThreadName=RunLevelControllerThread-1711550645394] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource(pool-name=__TimerPool,object-type=system-all,jndi-name=jdbc/__TimerPool), GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource(pool-name=DerbyPool,object-type=system-all-req,jndi-name=jdbc/__default), GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool(datasource-classname=org.apache.derby.jdbc.EmbeddedXADataSource,name=__TimerPool,res-type=javax.sql.XADataSource), GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool(is-isolation-level-guaranteed=false,datasource-classname=org.apache.derby.jdbc.ClientDataSource,name=DerbyPool,res-type=javax.sql.DataSource)]]]
+
+[2024-03-27T15:44:06.136497+01:00] [GF 7.0.13] [INFO] [NCLS-CORE-00013] [jakarta.enterprise.system.core] [tid: _ThreadID=21 _ThreadName=GlassFish Shutdown Hook] [levelValue: 800] [[
+  Shutdown procedure finished]]
+
+[2024-03-27T15:44:06.137198+01:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=21 _ThreadName=GlassFish Shutdown Hook] [levelValue: 800] [[
+  Completed shutdown of GlassFish runtime]]
+

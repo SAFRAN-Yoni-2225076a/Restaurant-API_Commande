@@ -9,10 +9,9 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
 
     protected Connection dbConnection;
 
-    public MenuRepositoryMariaDB(String infoConnection, String user, String pwd)
-            throws SQLException, ClassNotFoundException {
+    public MenuRepositoryMariaDB(String infoConnection, String user, String pwd ) throws java.sql.SQLException, java.lang.ClassNotFoundException {
         Class.forName("org.mariadb.jdbc.Driver");
-        dbConnection = DriverManager.getConnection(infoConnection, user, pwd);
+        dbConnection = DriverManager.getConnection( infoConnection, user, pwd ) ;
     }
 
     @Override
@@ -38,10 +37,10 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
 
             if (result.next()) {
                 String description = result.getString("description");
-                String authors = result.getString("authors");
+                String author = result.getString("author");
                 double prix = result.getDouble("prix");
 
-                selectedMenu = new Menu(authors, description, prix);
+                selectedMenu = new Menu(author, description, prix);
                 selectedMenu.setCreation_date(new Date());
             }
         } catch (SQLException e) {
@@ -63,11 +62,11 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
 
             while (result.next()) {
                 int id = result.getInt("id");
-                String authors = result.getString("authors");
+                String author = result.getString("author");
                 String description = result.getString("description");
                 double prix = result.getInt("prix");
 
-                Menu currentMenu = new Menu(authors, description, prix);
+                Menu currentMenu = new Menu(author, description, prix);
                 currentMenu.setCreation_date(new Date());
 
                 listMenu.add(currentMenu);
@@ -81,7 +80,7 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
     @Override
     public boolean updateMenu(int id, String author, String description, double prix) {
 
-        String query = "UPDATE Menu SET authors=?, description=?, prix=? WHERE id=?";
+        String query = "UPDATE Menu SET author=?, description=?, prix=? WHERE id=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ps.setString(1, author);
@@ -117,7 +116,7 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
 
     public boolean createMenu(Menu menu) {
 
-        String query = "INSERT INTO Menu (authors, description, prix) VALUES (?, ?, ?)";
+        String query = "INSERT INTO Menu (author, description, prix) VALUES (?, ?, ?)";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ps.setString(1, menu.getAuthor());

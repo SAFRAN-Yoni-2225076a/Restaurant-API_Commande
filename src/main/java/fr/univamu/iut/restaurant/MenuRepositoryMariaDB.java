@@ -9,9 +9,10 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
 
     protected Connection dbConnection;
 
-    public MenuRepositoryMariaDB(String infoConnection, String user, String pwd ) throws java.sql.SQLException, java.lang.ClassNotFoundException {
+    public MenuRepositoryMariaDB(String infoConnection, String user, String pwd)
+            throws java.sql.SQLException, java.lang.ClassNotFoundException {
         Class.forName("org.mariadb.jdbc.Driver");
-        dbConnection = DriverManager.getConnection( infoConnection, user, pwd ) ;
+        dbConnection = DriverManager.getConnection(infoConnection, user, pwd);
     }
 
     @Override
@@ -40,7 +41,7 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
                 String author = result.getString("author");
                 double prix = result.getDouble("prix");
 
-                selectedMenu = new Menu(author, description, prix);
+                selectedMenu = new Menu(id, author, description, prix);
                 selectedMenu.setCreation_date(new Date());
             }
         } catch (SQLException e) {
@@ -66,7 +67,7 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
                 String description = result.getString("description");
                 double prix = result.getInt("prix");
 
-                Menu currentMenu = new Menu(author, description, prix);
+                Menu currentMenu = new Menu(id, author, description, prix);
                 currentMenu.setCreation_date(new Date());
 
                 listMenu.add(currentMenu);

@@ -54,6 +54,7 @@
     <server config-ref="server-config" name="server">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
       <application-ref ref="book-1.0-SNAPSHOT" virtual-servers="server"></application-ref>
+      <application-ref ref="Restaurant_API_Menus-1.0-SNAPSHOT" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="concurrent/__defaultContextService"></resource-ref>
@@ -467,6 +468,19 @@
       <property name="defaultAppName" value="book-1.0-SNAPSHOT"></property>
       <property name="appLocation" value="file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/"></property>
       <module name="book-1.0-SNAPSHOT">
+        <engine sniffer="weld"></engine>
+        <engine sniffer="jpa"></engine>
+        <engine sniffer="security"></engine>
+        <engine sniffer="web"></engine>
+      </module>
+    </application>
+    <application context-root="/Restaurant_API_Menus-110800566146649880807.0-SNAPSHOT" object-type="user" name="Restaurant_API_Menus-1.0-SNAPSHOT" location="${com.sun.aas.instanceRootURI}/applications/Restaurant_API_Menus-1.0-SNAPSHOT/">
+      <property name="archiveType" value="war"></property>
+      <property name="preserveAppScopedResources" value="false"></property>
+      <property name="defaultAppName" value="Restaurant_API_Menus-110800566146649880807.0-SNAPSHOT"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/Restaurant_API_Menus-1.0-SNAPSHOT/Restaurant_API_Menus-110800566146649880807.0-SNAPSHOT.war"></property>
+      <property name="implicitCdiEnabled" value="true"></property>
+      <module name="Restaurant_API_Menus-1.0-SNAPSHOT">
         <engine sniffer="weld"></engine>
         <engine sniffer="jpa"></engine>
         <engine sniffer="security"></engine>

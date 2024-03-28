@@ -11,7 +11,8 @@ public class Menu {
     Date creation_date;
     double prix;
 
-    public Menu(String author, String description, double prix) {
+    public Menu(int id, String author, String description, double prix) {
+
         this.author = author;
         this.description = description;
         this.prix = prix;

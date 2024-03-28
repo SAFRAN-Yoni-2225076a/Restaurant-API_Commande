@@ -13,13 +13,11 @@ import java.util.ArrayList;
  */
 public class MenuService {
 
-
     /**
      * Objet permettant d'accéder au dépôt où sont stockées les informations sur les
      * menus
      */
     private MenuRepositoryInterface menuRepo;
-
 
     /**
      * Constructeur permettant d'injecter l'accès aux données
@@ -50,14 +48,17 @@ public class MenuService {
         return result;
     }
 
-    /**
+    /*
      * Méthode retournant au format JSON les informations sur un menu recherché
      *
      * @param id id du menu recherché
+     * 
      * @return une chaîne de caractère contenant les informations au format JSON
      */
+
     public String getMenuJSON(int id) throws SQLException, ClassNotFoundException {
-        menuRepo = new MenuRepositoryMariaDB("jdbc:mariadb://mysql-archilogicieltibo.alwaysdata.net/archilogicieltibo_restaurantmenu",
+        menuRepo = new MenuRepositoryMariaDB(
+                "jdbc:mariadb://mysql-archilogicieltibo.alwaysdata.net/archilogicieltibo_restaurantmenu",
                 "345226_menu", "Deliveroo$");
         String result = null;
         Menu myMenu = menuRepo.getMenu(id);

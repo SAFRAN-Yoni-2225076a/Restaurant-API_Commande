@@ -19,12 +19,12 @@ public class HelloApplication extends Application {
      *         pour accéder aux données des livres, voire les modifier
      */
     @Produces
-    private MenuRepositoryInterface openDbConnection() {
+    private CommandeRepositoryInterface openDbConnection() {
 
-        MenuRepositoryMariaDB db = null;
+        CommandeRepositoryMariaDB db = null;
 
         try {
-            db = new MenuRepositoryMariaDB(
+            db = new CommandeRepositoryMariaDB(
                     "jdbc:mariadb://mysql-archilogicieltibo.alwaysdata.net/archilogicieltibo_restaurantmenu",
                     "345226_menu", "Deliveroo$");
         } catch (Exception e) {
@@ -43,7 +43,7 @@ public class HelloApplication extends Application {
      * @param menuRepo la connexion à la base de données instanciée dans la
      *                 méthode @openDbConnection
      */
-    private void closeDbConnection(@Disposes MenuRepositoryInterface menuRepo) {
+    private void closeDbConnection(@Disposes CommandeRepositoryInterface menuRepo) {
 
         menuRepo.close();
     }

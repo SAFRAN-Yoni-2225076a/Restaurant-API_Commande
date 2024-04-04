@@ -7,13 +7,13 @@ import java.util.List;
 
 public class Commande {
 
-    List<Integer> menu;
+    ArrayList<Integer> menu;
     Date creation_date;
     Date livraison_date;
     double prix;
     String adresse;
 
-    public Commande(int id, List<Integer> menu, Date livraison_date, double prix, String adresse) {
+    public Commande(ArrayList<Integer> menu, Date livraison_date, double prix, String adresse) {
 
         this.menu = menu;
         this.livraison_date = livraison_date;
@@ -26,7 +26,7 @@ public class Commande {
         return menu;
     }
 
-    public void setMenu(List<Integer> menu) {
+    public void setMenu(ArrayList<Integer> menu) {
         this.menu = menu;
     }
 

@@ -10,21 +10,21 @@ import java.util.ArrayList;
  * Classe utilisée pour récupérer les informations nécessaires à la ressource
  * (permet de dissocier ressource et mode d'accès aux données)
  */
-public class MenuService {
+public class CommandeService {
 
     /**
      * Objet permettant d'accéder au dépôt où sont stockées les informations sur les
      * menus
      */
-    private MenuRepositoryInterface menuRepo;
+    private CommandeRepositoryInterface commandeRepo;
 
     /**
      * Constructeur permettant d'injecter l'accès aux données
      *
-     * @param menuRepo objet implémentant l'interface d'accès aux données
+     * @param commandeRepo objet implémentant l'interface d'accès aux données
      */
-    public MenuService(MenuRepositoryInterface menuRepo) {
-        this.menuRepo = menuRepo;
+    public CommandeService(CommandeRepositoryInterface commandeRepo) {
+        this.commandeRepo = commandeRepo;
     }
 
     /**
@@ -32,9 +32,9 @@ public class MenuService {
      *
      * @return une chaîne de caractère contenant les informations au format JSON
      */
-    public String getAllMenusJSON() {
+    public String getAllCommandeJSON() {
 
-        ArrayList<Commande> allCommandes = menuRepo.getAllMenu();
+        ArrayList<Commande> allCommandes = commandeRepo.getAllCommande();
 
         // Création du JSON et conversion de la liste de menus
         String result = null;
@@ -48,19 +48,19 @@ public class MenuService {
     }
 
     /*
-     * Méthode retournant au format JSON les informations sur un menu recherché
+     * Méthode retournant au format JSON les informations sur une commande recherché
      *
-     * @param id id du menu recherché
+     * @param adresse adresse de la commande recherché
      * 
      * @return une chaîne de caractère contenant les informations au format JSON
      */
 
-    public String getMenuJSON(int id) throws SQLException, ClassNotFoundException {
-        menuRepo = new MenuRepositoryMariaDB(
-                "jdbc:mariadb://mysql-archilogicieltibo.alwaysdata.net/archilogicieltibo_restaurantmenu",
-                "345226_menu", "Deliveroo$");
+    public String getCommandeJSON(String adresse) throws SQLException, ClassNotFoundException {
+        commandeRepo = new CommandeRepositoryMariaDB(
+                "jdbc:mariadb://mysql-yonisafran.alwaysdata.net/yonisafran_restaurantCommande",
+                "345222_commande", "Deliveroo$");
         String result = null;
-        Commande myCommande = menuRepo.getMenu(id);
+        Commande myCommande = commandeRepo.getCommande(adresse);
 
         // Si le menu a été trouvé
         if (myCommande != null) {
@@ -77,13 +77,21 @@ public class MenuService {
     }
 
     /**
-     * Méthode permettant de mettre à jours les informations d'un menu
+     * Méthode permettant de mettre à jours les informations d'une commande
      *
-     * @param id   id du menu à mettre à jours
+     * @param adresse de la commande à mettre à jours
      * @param commande les nouvelles informations à été utiliser
      * @return true si le menu a pu être mis à jours
      */
-    public boolean updateMenu(int id, Commande commande) {
-        return menuRepo.updateMenu(id, commande.getMenu(), commande.getDescription(), commande.getPrix());
+    public boolean updateCommande(String adresse, Commande commande) {
+        return commandeRepo.updateCommande((ArrayList<Integer>) commande.getMenu(), commande.getLivraison_date(), commande.getPrix(),  adresse);
+    }
+
+    public boolean deleteCommande(String adresse){
+        return commandeRepo.deleteCommande(adresse);
+    }
+
+    public boolean createCommande(Commande commande){
+        return commandeRepo.createCommande(commande);
     }
 }

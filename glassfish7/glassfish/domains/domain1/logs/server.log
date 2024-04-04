@@ -14391,9 +14391,9 @@ file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domai
 [2024-04-03T23:42:12.038232+02:00] [GF 7.0.13] [WARNING] [] [org.glassfish.jersey.server.ServerRuntime$Responder] [tid: _ThreadID=39 _ThreadName=http-listener-1(1)] [levelValue: 900] [[
   An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
 java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: (conn=14825078) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
-	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:76)
-	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
-	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at fr.univamu.iut.restaurant.CommandeRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:76)
+	at fr.univamu.iut.restaurant.CommandeService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.CommandeResource.getAllMenus(MenuResource.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14457,7 +14457,7 @@ Caused by: java.sql.SQLSyntaxErrorException: (conn=14825078) Table 'archilogicie
 	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
-	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	at fr.univamu.iut.restaurant.CommandeRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
 	... 55 more
 ]]
 
@@ -14473,9 +14473,9 @@ java.sql.SQLSyntaxErrorException: (conn=14825078) Table 'archilogicieltibo_resta
 	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
-	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
-	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
-	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at fr.univamu.iut.restaurant.CommandeRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	at fr.univamu.iut.restaurant.CommandeService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.CommandeResource.getAllMenus(MenuResource.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14534,9 +14534,9 @@ java.sql.SQLSyntaxErrorException: (conn=14825078) Table 'archilogicieltibo_resta
 [2024-04-03T23:42:12.207061+02:00] [GF 7.0.13] [WARNING] [] [org.glassfish.jersey.server.ServerRuntime$Responder] [tid: _ThreadID=41 _ThreadName=http-listener-1(3)] [levelValue: 900] [[
   An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
 java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: (conn=14825079) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
-	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:76)
-	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
-	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at fr.univamu.iut.restaurant.CommandeRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:76)
+	at fr.univamu.iut.restaurant.CommandeService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.CommandeResource.getAllMenus(MenuResource.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -14600,7 +14600,7 @@ Caused by: java.sql.SQLSyntaxErrorException: (conn=14825079) Table 'archilogicie
 	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
-	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	at fr.univamu.iut.restaurant.CommandeRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
 	... 55 more
 ]]
 
@@ -14616,9 +14616,9 @@ java.sql.SQLSyntaxErrorException: (conn=14825079) Table 'archilogicieltibo_resta
 	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
 	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
-	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
-	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
-	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at fr.univamu.iut.restaurant.CommandeRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	at fr.univamu.iut.restaurant.CommandeService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.CommandeResource.getAllMenus(MenuResource.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

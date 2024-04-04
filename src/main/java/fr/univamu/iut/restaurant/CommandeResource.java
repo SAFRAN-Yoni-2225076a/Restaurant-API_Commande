@@ -10,35 +10,35 @@ import java.sql.SQLException;
  * Ressource associée aux Menus
  * (point d'accès de l'API REST)
  */
-@Path("/menus")
-public class MenuResource {
+@Path("/commande")
+public class CommandeResource {
 
     /**
      * Service utilisé pour accéder aux données des Menus et récupérer/modifier
      * leurs informations
      */
-    private MenuService service;
+    private CommandeService service;
 
     /**
      * Constructeur par défaut
      */
-    public MenuResource() {
+    public CommandeResource() {
     }
 
     /**
      * Constructeur permettant d'initialiser le service avec une interface d'accès
      * aux données
      * 
-     * @param menuRepo objet implémentant l'interface d'accès aux données
+     * @param commandeRepo objet implémentant l'interface d'accès aux données
      */
-    public @Inject MenuResource(MenuRepositoryInterface menuRepo) {
-        this.service = new MenuService(menuRepo);
+    public @Inject CommandeResource(CommandeRepositoryInterface commandeRepo) {
+        this.service = new CommandeService(commandeRepo);
     }
 
     /**
      * Constructeur permettant d'initialiser le service d'accès aux Menus
      */
-    public MenuResource(MenuService service) {
+    public CommandeResource(CommandeService service) {
         this.service = service;
     }
 
@@ -49,25 +49,25 @@ public class MenuResource {
      */
     @GET
     @Produces("application/json")
-    public String getAllMenus() {
-        return service.getAllMenusJSON();
+    public String getAllCommande() {
+        return service.getAllCommandeJSON();
     }
 
     /**
      * Endpoint permettant de publier les informations d'un Menu dont la référence
      * est passée paramètre dans le chemin
      * 
-     * @param id référence du Menu recherché
+     * @param adresse référence du Menu recherché
      * @return les informations du Menu recherché au format JSON
      */
     @GET
-    @Path("{id}")
+    @Path("{adresse}")
     @Produces("application/json")
-    public String getMenu(@PathParam("id") int id) throws SQLException, ClassNotFoundException {
+    public String getCommande(@PathParam("adresse") String adresse) throws SQLException, ClassNotFoundException {
 
-        String result = service.getMenuJSON(id);
+        String result = service.getCommandeJSON(adresse);
 
-        // si le Menu n'a pas été trouvé
+        // si la commande n'a pas été trouvée
         if (result == null)
             throw new NotFoundException();
 
@@ -84,23 +84,23 @@ public class MenuResource {
     }
 
     /**
-     * Endpoint permettant de mettre à jours le statut d'un Menu uniquement
-     * (la requête patch doit fournir le nouveau statut sur Menu, les autres
+     * Endpoint permettant de mettre à jours le statut d'une commande uniquement
+     * (la requête patch doit fournir le nouveau statut sur Commande, les autres
      * informations sont ignorées)
      * 
-     * @param id   id du Menu dont il faut changer le statut
-     * @param commande le menu transmis en HTTP au format JSON et convertit en
-     *             objet Menu
+     * @param adresse   adresse du Menu dont il faut changer le statut
+     * @param commande la commandetransmis en HTTP au format JSON et convertit en
+     *             objet Commande
      * @return une réponse "updated" si la mise à jour a été effectuée, une erreur
      *         NotFound sinon
      */
     @PUT
-    @Path("{id}")
+    @Path("{adresse}")
     @Consumes("application/json")
-    public Response updateMenu(@PathParam("id") int id, Commande commande) {
+    public Response updateMenu(@PathParam("adresse") String adresse, Commande commande) {
 
-        // si le Menu n'a pas été trouvé
-        if (!service.updateMenu(id, commande))
+        // si la commande n'a pas été trouvée
+        if (!service.updateCommande(adresse, commande))
             throw new NotFoundException();
         else
             return Response.ok("updated").build();

@@ -4,12 +4,13 @@ import java.io.Closeable;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
-public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable {
+public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, Closeable {
 
     protected Connection dbConnection;
 
-    public MenuRepositoryMariaDB(String infoConnection, String user, String pwd)
+    public CommandeRepositoryMariaDB(String infoConnection, String user, String pwd)
             throws java.sql.SQLException, java.lang.ClassNotFoundException {
         Class.forName("org.mariadb.jdbc.Driver");
         dbConnection = DriverManager.getConnection(infoConnection, user, pwd);
@@ -25,23 +26,23 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
     }
 
     @Override
-    public Commande getMenu(int id) {
+    public Commande getCommande(String adresse) {
 
         Commande selectedCommande = null;
 
-        String query = "SELECT * FROM menu WHERE id=?";
+        String query = "SELECT * FROM menu WHERE adresse=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
-            ps.setInt(1, id);
+            ps.setString(1, adresse);
 
             ResultSet result = ps.executeQuery();
 
             if (result.next()) {
-                String description = result.getString("description");
-                String author = result.getString("author");
+                ArrayList<Integer> menu = (ArrayList<Integer>) result.getArray("menu");
+                Date livraison_date = result.getDate("dateLiv");
                 double prix = result.getDouble("prix");
 
-                selectedCommande = new Commande(id, author, description, prix);
+                selectedCommande = new Commande(menu, livraison_date, prix, adresse);
                 selectedCommande.setCreation_date(new Date());
             }
         } catch (SQLException e) {
@@ -51,7 +52,7 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
     }
 
     @Override
-    public ArrayList<Commande> getAllMenu() {
+    public ArrayList<Commande> getAllCommande() {
         ArrayList<Commande> listCommandes;
 
         String query = "SELECT * FROM Menu";
@@ -62,12 +63,12 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
             listCommandes = new ArrayList<>();
 
             while (result.next()) {
-                int id = result.getInt("id");
-                String author = result.getString("author");
-                String description = result.getString("description");
-                double prix = result.getInt("prix");
+                ArrayList<Integer> menu = (ArrayList<Integer>) result.getArray("menu");
+                Date livraison_date = result.getDate("dateLiv");
+                double prix = result.getDouble("prix");
+                String adresse = result.getString("adresse");
 
-                Commande currentCommande = new Commande(id, author, description, prix);
+                Commande currentCommande = new Commande(menu, livraison_date, prix, adresse);
                 currentCommande.setCreation_date(new Date());
 
                 listCommandes.add(currentCommande);
@@ -78,19 +79,20 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
         return listCommandes;
     }
 
-    @Override
-    public boolean updateMenu(int id, String author, String description, double prix) {
 
-        String query = "UPDATE Menu SET author=?, description=?, prix=? WHERE id=?";
+    @Override
+    public boolean updateCommande(ArrayList<Integer> menu, Date livraison_date, double prix, String adresse) {
+
+        String query = "UPDATE Menu SET menu=?, dateLiv=?, prix=? WHERE adresse=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
-            ps.setString(1, author);
-            ps.setString(2, description);
+            ps.setArray(1, (Array) menu);
+            ps.setDate(2, (java.sql.Date) livraison_date);
             ps.setDouble(3, prix);
 
             int result = ps.executeUpdate();
 
-            Commande currentCommande = getMenu(id);
+            Commande currentCommande = getCommande(adresse);
             currentCommande.setCreation_date(new Date());
 
             return result == 1;
@@ -100,12 +102,12 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
     }
 
     @Override
-    public boolean deleteMenu(int id) {
+    public boolean deleteCommande(String adresse) {
 
-        String query = "DELETE FROM Menu WHERE id=?";
+        String query = "DELETE FROM Menu WHERE adresse=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
-            ps.setInt(1, id);
+            ps.setString(1, adresse);
 
             int result = ps.executeUpdate();
 
@@ -115,14 +117,15 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
         }
     }
 
-    public boolean createMenu(Commande commande) {
+    public boolean createCommande(Commande commande) {
 
-        String query = "INSERT INTO Menu (author, description, prix) VALUES (?, ?, ?)";
+        String query = "INSERT INTO Menu (menu, dateliv, prix, adresse) VALUES (?, ?, ?, ?)";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
-            ps.setString(1, commande.getMenu());
-            ps.setString(2, commande.getDescription());
+            ps.setArray(1, (Array) commande.getMenu());
+            ps.setDate(2, (java.sql.Date) commande.getLivraison_date());
             ps.setDouble(3, commande.getPrix());
+            ps.setString(4, commande.getAdresse());
 
             int result = ps.executeUpdate();
 

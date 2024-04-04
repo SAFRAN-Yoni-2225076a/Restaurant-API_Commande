@@ -7,15 +7,15 @@ import java.util.*;
  */
 public interface MenuRepositoryInterface {
 
-    Menu getMenu(int id);
+    Commande getMenu(int id);
 
-    ArrayList<Menu> getAllMenu();
+    ArrayList<Commande> getAllMenu();
 
     boolean updateMenu(int id, String author, String description, double prix);
 
     boolean deleteMenu(int id);
 
-    boolean createMenu(Menu menu);
+    boolean createMenu(Commande commande);
 
     void close();
 }

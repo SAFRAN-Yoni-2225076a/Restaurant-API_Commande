@@ -596,7 +596,7 @@
     The hypothetical commands `show w' and `show c' should show the
     appropriate parts of the General Public License. Of course, the commands
     you use may be called something other than `show w' and `show c'; they
-    could even be mouse-clicks or menu items--whatever suits your program.
+    could even be mouse-clicks or commande items--whatever suits your program.
 
     You should also get your employer (if you work as a programmer) or your
     school, if any, to sign a "copyright disclaimer" for the program, if

@@ -14087,3 +14087,590 @@ file:/C:/Users/Thibault/OneDrive/Bureau/workspace/Restaurant-API_Menus/glassfish
 [2024-03-28T19:41:34.016311+01:00] [GF 7.0.13] [SEVERE] [] [jakarta.enterprise.logging.stderr] [tid: _ThreadID=41 _ThreadName=http-listener-1(1)] [levelValue: 1000] [[
   SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.]]
 
+[2024-04-03T23:35:37.213599+02:00] [] [INFO] [NCLS-GFLAUNCHER-00005] [jakarta.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  JVM invocation command line:
+C:\Program Files\Java\jdk-11\bin\java.exe
+-cp
+C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2024-04-03T21:35:36.055259800Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/server.policy
+-Djava.security.auth.login.config=C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1
+-Dcom.sun.aas.installRoot=C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish
+-Djava.library.path=C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib;C:/Program Files/Java/jdk-11/bin;C:/Windows/Sun/Java/bin;C:/Windows/System32;C:/Windows;C:/Program Files/Common Files/Oracle/Java/javapath;D:/apache-maven-3.9.6/bin;C:/Program Files (x86)/Intel/iCLS Client;C:/Program Files/Intel/iCLS Client;C:/Windows/System32/wbem;C:/Windows/System32/WindowsPowerShell/v1.0;C:/Program Files/Intel/WiFi/bin;C:/Program Files/Common Files/Intel/WirelessCommon;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files (x86)/Windows Live/Shared;C:/Program Files (x86)/GtkSharp/2.12/bin;C:/Windows/System32/OpenSSH;C:/Program Files/dotnet;C:/Program Files (x86)/QuickTime/QTSystem;C:/Program Files/Git/cmd;C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR;C:/Users/Yoni/AppData/Local/Microsoft/WindowsApps;C:/Users/Yoni/AppData/Local/GitHubDesktop/bin;C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/bin
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2024-04-03T23:35:49.336508+02:00] [GF 7.0.13] [INFO] [NCLS-BOOTSTRAP-00035] [jakarta.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Provisioning options have changed, recreating the framework with a clean OSGi storage(aka cache).]]
+
+[2024-04-03T23:36:04.407341+02:00] [GF 7.0.13] [INFO] [] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Using property file: C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\config\logging.properties]]
+
+[2024-04-03T23:36:04.478152+02:00] [GF 7.0.13] [INFO] [NCLS-LOGGING-00009] [com.sun.enterprise.server.logging.LogManagerService] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Running GlassFish Version: Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae)]]
+
+[2024-04-03T23:36:06.168225+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 63 ms - bound to [/0.0.0.0:8080]]]
+
+[2024-04-03T23:36:06.198146+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 2 ms - bound to [/0.0.0.0:8181]]]
+
+[2024-04-03T23:36:06.203643+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 1 ms - bound to [/0.0.0.0:4848]]]
+
+[2024-04-03T23:36:06.265370+02:00] [GF 7.0.13] [INFO] [SEC-SVCS-00100] [jakarta.enterprise.security.services] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2024-04-03T23:36:06.337650+02:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-04-03T23:36:06.356606+02:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2024-04-03T23:36:06.366581+02:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01115] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2024-04-03T23:36:06.639689+02:00] [GF 7.0.13] [SEVERE] [NCLS-CORE-00043] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 1000] [[
+  Application previously deployed is not at its original location any more: file:/amuhome/a22009311/IdeaProjects/book/target/book-1.0-SNAPSHOT/]]
+
+[2024-04-03T23:36:09.879744+02:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01002] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2024-04-03T23:36:09.879744+02:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01010] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2024-04-03T23:36:09.882736+02:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01143] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading policy provider org.glassfish.exousia.modules.locked.SimplePolicyProvider.]]
+
+[2024-04-03T23:36:09.996438+02:00] [GF 7.0.13] [INFO] [NCLS-SECURITY-01011] [jakarta.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2024-04-03T23:36:10.326946+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2024-04-03T23:36:10.329939+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2024-04-03T23:36:10.332372+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2024-04-03T23:36:10.351320+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2024-04-03T23:36:10.355310+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2024-04-03T23:36:10.743376+02:00] [GF 7.0.13] [INFO] [AS-WEB-CORE-00306] [jakarta.enterprise.web.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2024-04-03T23:36:10.745370+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2024-04-03T23:36:11.639366+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@6249a08d[name=unknown], urls=[
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/classes/
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/caffeine-2.9.3.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.32.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.10.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-2.0.7.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jna-5.13.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jna-platform-5.13.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-3.3.3.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.7.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/waffle-jna-3.3.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/Restaurant_API_Menus-1.0-SNAPSHOT/
+][delegate=true, context=unknown, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=37, pathTimestamps.size=9, resourceEntryCache.size=0]]]
+
+[2024-04-03T23:36:12.125584+02:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  WELD-000900: 5.1.2 (Final)]]
+
+[2024-04-03T23:36:13.375175+02:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2024-04-03T23:36:14.768967+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Initializing Soteria 3.0.3 for context '/Restaurant_API_Menus-110800566146649880807.0-SNAPSHOT']]
+
+[2024-04-03T23:36:14.847754+02:00] [GF 7.0.13] [INFO] [] [org.eclipse.krazo.servlet.KrazoContainerInitializer] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse Krazo version 3.0.1 started]]
+
+[2024-04-03T23:36:15.962230+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading application [Restaurant_API_Menus-1.0-SNAPSHOT] at [/Restaurant_API_Menus-110800566146649880807.0-SNAPSHOT]]]
+
+[2024-04-03T23:36:15.965224+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Loading application Restaurant_API_Menus-1.0-SNAPSHOT done in 9 326 ms]]
+
+[2024-04-03T23:36:15.986209+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2024-04-03T23:36:16.013177+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00087] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Grizzly Framework 4.0.2 started in: 8 ms - bound to [/0.0.0.0:3700]]]
+
+[2024-04-03T23:36:16.019161+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00017] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Eclipse GlassFish 7.0.13 (commit: 5829ac5e2aed76402d08dc51752223ccb72ff4ae) startup time: Embedded (25 852 ms), startup services (12 054 ms), total (37 906 ms)]]
+
+[2024-04-03T23:36:16.053103+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00018] [jakarta.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [levelValue: 800] [[
+  Total startup time including CLI: 39 997 ms]]
+
+[2024-04-03T23:36:17.210441+02:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=31 _ThreadName=FelixStartLevel] [levelValue: 800] [[
+  C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2024-04-03T23:36:17.292836+02:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.logging.stdout] [tid: _ThreadID=31 _ThreadName=FelixStartLevel] [levelValue: 800] [[
+  Root path does not exist: C:\Users\Yoni\IdeaProjects\Restaurant-API_Menus\glassfish7\glassfish\domains\domain1\autodeploy\bundles]]
+
+[2024-04-03T23:36:17.977722+02:00] [GF 7.0.13] [INFO] [NCLS-JMX-00005] [jakarta.enterprise.system.jmx] [tid: _ThreadID=89 _ThreadName=Thread-12] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://DESKTOP-ACRRGAB:8686/jndi/rmi://DESKTOP-ACRRGAB:8686/jmxrmi]]
+
+[2024-04-03T23:36:50.997479+02:00] [GF 7.0.13] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [levelValue: 800] [[
+  Listening to REST requests at context: /management/domain.]]
+
+[2024-04-03T23:36:52.185565+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=131 _ThreadName=Thread-26] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@7eda84f8[name=unknown], urls=[
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/classes/
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/lib/console-core-7.0.13.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/__admingui/
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/woodstock-webui-jsf-suntheme-6.0.1.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/dojo-ajax-nodemo-1.12.4.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/woodstock-webui-jsf-6.0.1.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/json-2.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/prototype-1.7.3.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/lib/install/applications/__admingui/WEB-INF/extra/commons-io-2.15.1.jar
+][delegate=true, context=unknown, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=0, pathTimestamps.size=1, resourceEntryCache.size=0]]]
+
+[2024-04-03T23:36:52.348975+02:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=131 _ThreadName=Thread-26] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2024-04-03T23:36:53.145732+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=131 _ThreadName=Thread-26] [levelValue: 800] [[
+  Initializing Soteria 3.0.3 for context '']]
+
+[2024-04-03T23:36:53.398103+02:00] [GF 7.0.13] [INFO] [faces.config.listener.version] [jakarta.enterprise.resource.webcontainer.faces.config] [tid: _ThreadID=131 _ThreadName=Thread-26] [levelValue: 800] [[
+  Initialisation de Mojarra 4.0.5 pour le contexte «»]]
+
+[2024-04-03T23:36:54.974879+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=131 _ThreadName=Thread-26] [levelValue: 800] [[
+  Loading application [__admingui] at [/]]]
+
+[2024-04-03T23:36:54.976874+02:00] [GF 7.0.13] [INFO] [NCLS-CORE-00022] [jakarta.enterprise.system.core] [tid: _ThreadID=131 _ThreadName=Thread-26] [levelValue: 800] [[
+  Loading application __admingui done in 7 144 ms]]
+
+[2024-04-03T23:36:55.065490+02:00] [GF 7.0.13] [WARNING] [] [com.sun.web.security.RealmAdapter] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [levelValue: 900] [[
+  Context path from ServletContext:  differs from path from bundle: /]]
+
+[2024-04-03T23:36:58.328954+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=56 _ThreadName=admin-listener(4)] [levelValue: 800] [[
+  Redirecting to &#x2f;]]
+
+[2024-04-03T23:36:58.558424+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=53 _ThreadName=admin-listener(1)] [levelValue: 800] [[
+  Admin Console: Initializing Session Attributes...]]
+
+[2024-04-03T23:37:38.506800+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=54 _ThreadName=admin-listener(2)] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@13cc31df[name=/Restaurant_API_Menus-110800566146649880807.0-SNAPSHOT], urls=[
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/classes/
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/caffeine-2.9.3.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.32.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.10.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-2.0.7.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jna-5.13.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jna-platform-5.13.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-3.3.3.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.7.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/waffle-jna-3.3.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/Restaurant_API_Menus-1.0-SNAPSHOT/
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/Restaurant_API_Menus-1.0-SNAPSHOT/
+][delegate=true, context=/Restaurant_API_Menus-110800566146649880807.0-SNAPSHOT, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=51, pathTimestamps.size=15, resourceEntryCache.size=6]]]
+
+[2024-04-03T23:40:18.176450+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [levelValue: 800] [[
+  GUI deployment: uploadToTempfile]]
+
+[2024-04-03T23:40:18.194402+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [levelValue: 800] [[
+  uploadFileName=Restaurant_API_Menus-1.0-SNAPSHOT.war]]
+
+[2024-04-03T23:40:19.506183+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@3f6bb2a5[name=unknown], urls=[
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/classes/
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/caffeine-2.9.3.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.32.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/error_prone_annotations-2.10.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-2.0.7.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jna-5.13.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/jna-platform-5.13.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-3.3.3.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.7.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/applications/Restaurant_API_Menus-1.0-SNAPSHOT/WEB-INF/lib/waffle-jna-3.3.0.jar
+file:/C:/Users/Yoni/IdeaProjects/Restaurant-API_Menus/glassfish7/glassfish/domains/domain1/generated/ejb/Restaurant_API_Menus-1.0-SNAPSHOT/
+][delegate=true, context=unknown, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=0, pathTimestamps.size=9, resourceEntryCache.size=0]]]
+
+[2024-04-03T23:40:19.737692+02:00] [GF 7.0.13] [INFO] [] [org.jboss.weld.Event] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [levelValue: 800] [[
+  WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.]]
+
+[2024-04-03T23:40:19.986187+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [levelValue: 800] [[
+  Initializing Soteria 3.0.3 for context '/Restaurant_API_Menus-15010124232297610796.0-SNAPSHOT']]
+
+[2024-04-03T23:40:20.009633+02:00] [GF 7.0.13] [INFO] [] [org.eclipse.krazo.servlet.KrazoContainerInitializer] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [levelValue: 800] [[
+  Eclipse Krazo version 3.0.1 started]]
+
+[2024-04-03T23:40:20.217078+02:00] [GF 7.0.13] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [levelValue: 800] [[
+  Loading application [Restaurant_API_Menus-1.0-SNAPSHOT] at [/Restaurant_API_Menus-15010124232297610796.0-SNAPSHOT]]]
+
+[2024-04-03T23:40:20.319074+02:00] [GF 7.0.13] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=55 _ThreadName=admin-listener(3)] [levelValue: 800] [[
+  Restaurant_API_Menus-1.0-SNAPSHOT was successfully deployed in 2 079 milliseconds.]]
+
+[2024-04-03T23:40:20.322068+02:00] [GF 7.0.13] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=57 _ThreadName=admin-listener(5)] [levelValue: 800] [[
+  Deleting the file uploaded to Temp Directory]]
+
+[2024-04-03T23:42:11.624397+02:00] [GF 7.0.13] [SEVERE] [] [jakarta.enterprise.logging.stderr] [tid: _ThreadID=39 _ThreadName=http-listener-1(1)] [levelValue: 1000] [[
+  SLF4J: No SLF4J providers were found.]]
+
+[2024-04-03T23:42:11.624397+02:00] [GF 7.0.13] [SEVERE] [] [jakarta.enterprise.logging.stderr] [tid: _ThreadID=39 _ThreadName=http-listener-1(1)] [levelValue: 1000] [[
+  SLF4J: Defaulting to no-operation (NOP) logger implementation]]
+
+[2024-04-03T23:42:11.625394+02:00] [GF 7.0.13] [SEVERE] [] [jakarta.enterprise.logging.stderr] [tid: _ThreadID=39 _ThreadName=http-listener-1(1)] [levelValue: 1000] [[
+  SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.]]
+
+[2024-04-03T23:42:12.038232+02:00] [GF 7.0.13] [WARNING] [] [org.glassfish.jersey.server.ServerRuntime$Responder] [tid: _ThreadID=39 _ThreadName=http-listener-1(1)] [levelValue: 900] [[
+  An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: (conn=14825078) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
+	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:76)
+	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1368)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:120)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:563)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:504)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:71)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:121)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:295)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:188)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:425)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=14825078) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
+	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	... 55 more
+]]
+
+[2024-04-03T23:42:12.042222+02:00] [GF 7.0.13] [WARNING] [] [jakarta.enterprise.web.vs.server] [tid: _ThreadID=39 _ThreadName=http-listener-1(1)] [levelValue: 900] [[
+  StandardWrapperValve[fr.univamu.iut.restaurant.HelloApplication]: Servlet.service() for servlet fr.univamu.iut.restaurant.HelloApplication threw exception
+java.sql.SQLSyntaxErrorException: (conn=14825078) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
+	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1368)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:120)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:563)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:504)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:71)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:121)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:295)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:188)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:425)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]
+
+[2024-04-03T23:42:12.207061+02:00] [GF 7.0.13] [WARNING] [] [org.glassfish.jersey.server.ServerRuntime$Responder] [tid: _ThreadID=41 _ThreadName=http-listener-1(3)] [levelValue: 900] [[
+  An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper.
+java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: (conn=14825079) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
+	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:76)
+	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1368)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:120)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:563)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:504)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:71)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:121)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:295)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:188)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:425)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=14825079) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
+	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	... 55 more
+]]
+
+[2024-04-03T23:42:12.209056+02:00] [GF 7.0.13] [WARNING] [] [jakarta.enterprise.web.vs.server] [tid: _ThreadID=41 _ThreadName=http-listener-1(3)] [levelValue: 900] [[
+  StandardWrapperValve[fr.univamu.iut.restaurant.HelloApplication]: Servlet.service() for servlet fr.univamu.iut.restaurant.HelloApplication threw exception
+java.sql.SQLSyntaxErrorException: (conn=14825079) Table 'archilogicieltibo_restaurantmenu.Menu' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:296)
+	at fr.univamu.iut.restaurant.MenuRepositoryMariaDB.getAllMenu(MenuRepositoryMariaDB.java:60)
+	at fr.univamu.iut.restaurant.MenuService.getAllMenusJSON(MenuService.java:38)
+	at fr.univamu.iut.restaurant.MenuResource.getAllMenus(MenuResource.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:261)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1368)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:120)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:563)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:504)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:71)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:121)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:295)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:188)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:425)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:144)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:174)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:153)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:196)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:88)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:246)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:178)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:118)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:96)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:51)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:510)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:82)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:83)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:101)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:535)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:515)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]
+

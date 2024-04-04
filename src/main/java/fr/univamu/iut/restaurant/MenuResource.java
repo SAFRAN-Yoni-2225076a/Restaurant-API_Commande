@@ -1,12 +1,8 @@
 package fr.univamu.iut.restaurant;
 
-import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
-
-import fr.univamu.iut.restaurant.MenuService;
-import fr.univamu.iut.restaurant.MenuRepositoryInterface;
 
 import java.sql.SQLException;
 
@@ -93,7 +89,7 @@ public class MenuResource {
      * informations sont ignorées)
      * 
      * @param id   id du Menu dont il faut changer le statut
-     * @param menu le menu transmis en HTTP au format JSON et convertit en
+     * @param commande le menu transmis en HTTP au format JSON et convertit en
      *             objet Menu
      * @return une réponse "updated" si la mise à jour a été effectuée, une erreur
      *         NotFound sinon
@@ -101,10 +97,10 @@ public class MenuResource {
     @PUT
     @Path("{id}")
     @Consumes("application/json")
-    public Response updateMenu(@PathParam("id") int id, Menu menu) {
+    public Response updateMenu(@PathParam("id") int id, Commande commande) {
 
         // si le Menu n'a pas été trouvé
-        if (!service.updateMenu(id, menu))
+        if (!service.updateMenu(id, commande))
             throw new NotFoundException();
         else
             return Response.ok("updated").build();

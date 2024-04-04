@@ -25,9 +25,9 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
     }
 
     @Override
-    public Menu getMenu(int id) {
+    public Commande getMenu(int id) {
 
-        Menu selectedMenu = null;
+        Commande selectedCommande = null;
 
         String query = "SELECT * FROM menu WHERE id=?";
 
@@ -41,25 +41,25 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
                 String author = result.getString("author");
                 double prix = result.getDouble("prix");
 
-                selectedMenu = new Menu(id, author, description, prix);
-                selectedMenu.setCreation_date(new Date());
+                selectedCommande = new Commande(id, author, description, prix);
+                selectedCommande.setCreation_date(new Date());
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return selectedMenu;
+        return selectedCommande;
     }
 
     @Override
-    public ArrayList<Menu> getAllMenu() {
-        ArrayList<Menu> listMenu;
+    public ArrayList<Commande> getAllMenu() {
+        ArrayList<Commande> listCommandes;
 
         String query = "SELECT * FROM Menu";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ResultSet result = ps.executeQuery();
 
-            listMenu = new ArrayList<>();
+            listCommandes = new ArrayList<>();
 
             while (result.next()) {
                 int id = result.getInt("id");
@@ -67,15 +67,15 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
                 String description = result.getString("description");
                 double prix = result.getInt("prix");
 
-                Menu currentMenu = new Menu(id, author, description, prix);
-                currentMenu.setCreation_date(new Date());
+                Commande currentCommande = new Commande(id, author, description, prix);
+                currentCommande.setCreation_date(new Date());
 
-                listMenu.add(currentMenu);
+                listCommandes.add(currentCommande);
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return listMenu;
+        return listCommandes;
     }
 
     @Override
@@ -90,8 +90,8 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
 
             int result = ps.executeUpdate();
 
-            Menu currentMenu = getMenu(id);
-            currentMenu.setCreation_date(new Date());
+            Commande currentCommande = getMenu(id);
+            currentCommande.setCreation_date(new Date());
 
             return result == 1;
         } catch (SQLException e) {
@@ -115,14 +115,14 @@ public class MenuRepositoryMariaDB implements MenuRepositoryInterface, Closeable
         }
     }
 
-    public boolean createMenu(Menu menu) {
+    public boolean createMenu(Commande commande) {
 
         String query = "INSERT INTO Menu (author, description, prix) VALUES (?, ?, ?)";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
-            ps.setString(1, menu.getAuthor());
-            ps.setString(2, menu.getDescription());
-            ps.setDouble(3, menu.getPrix());
+            ps.setString(1, commande.getMenu());
+            ps.setString(2, commande.getDescription());
+            ps.setDouble(3, commande.getPrix());
 
             int result = ps.executeUpdate();
 

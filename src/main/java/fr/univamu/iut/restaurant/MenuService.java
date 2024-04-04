@@ -1,6 +1,5 @@
 package fr.univamu.iut.restaurant;
 
-import jakarta.inject.Inject;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 
@@ -35,12 +34,12 @@ public class MenuService {
      */
     public String getAllMenusJSON() {
 
-        ArrayList<Menu> allMenus = menuRepo.getAllMenu();
+        ArrayList<Commande> allCommandes = menuRepo.getAllMenu();
 
         // Création du JSON et conversion de la liste de menus
         String result = null;
         try (Jsonb jsonb = JsonbBuilder.create()) {
-            result = jsonb.toJson(allMenus);
+            result = jsonb.toJson(allCommandes);
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
@@ -61,14 +60,14 @@ public class MenuService {
                 "jdbc:mariadb://mysql-archilogicieltibo.alwaysdata.net/archilogicieltibo_restaurantmenu",
                 "345226_menu", "Deliveroo$");
         String result = null;
-        Menu myMenu = menuRepo.getMenu(id);
+        Commande myCommande = menuRepo.getMenu(id);
 
         // Si le menu a été trouvé
-        if (myMenu != null) {
+        if (myCommande != null) {
 
             // Création du JSON et conversion du menu
             try (Jsonb jsonb = JsonbBuilder.create()) {
-                result = jsonb.toJson(myMenu);
+                result = jsonb.toJson(myCommande);
             } catch (Exception e) {
                 System.err.println(e.getMessage());
             }
@@ -81,10 +80,10 @@ public class MenuService {
      * Méthode permettant de mettre à jours les informations d'un menu
      *
      * @param id   id du menu à mettre à jours
-     * @param menu les nouvelles informations à été utiliser
+     * @param commande les nouvelles informations à été utiliser
      * @return true si le menu a pu être mis à jours
      */
-    public boolean updateMenu(int id, Menu menu) {
-        return menuRepo.updateMenu(id, menu.getAuthor(), menu.getDescription(), menu.getPrix());
+    public boolean updateMenu(int id, Commande commande) {
+        return menuRepo.updateMenu(id, commande.getMenu(), commande.getDescription(), commande.getPrix());
     }
 }

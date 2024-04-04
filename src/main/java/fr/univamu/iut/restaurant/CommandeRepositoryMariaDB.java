@@ -30,7 +30,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
 
         Commande selectedCommande = null;
 
-        String query = "SELECT * FROM menu WHERE adresse=?";
+        String query = "SELECT * FROM commande WHERE adresse=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ps.setString(1, adresse);
@@ -55,7 +55,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
     public ArrayList<Commande> getAllCommande() {
         ArrayList<Commande> listCommandes;
 
-        String query = "SELECT * FROM Menu";
+        String query = "SELECT * FROM Commande";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ResultSet result = ps.executeQuery();
@@ -83,7 +83,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
     @Override
     public boolean updateCommande(ArrayList<Integer> menu, Date livraison_date, double prix, String adresse) {
 
-        String query = "UPDATE Menu SET menu=?, dateLiv=?, prix=? WHERE adresse=?";
+        String query = "UPDATE Commande SET menu=?, dateLiv=?, prix=? WHERE adresse=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ps.setArray(1, (Array) menu);
@@ -104,7 +104,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
     @Override
     public boolean deleteCommande(String adresse) {
 
-        String query = "DELETE FROM Menu WHERE adresse=?";
+        String query = "DELETE FROM Commande WHERE adresse=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ps.setString(1, adresse);
@@ -119,7 +119,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
 
     public boolean createCommande(Commande commande) {
 
-        String query = "INSERT INTO Menu (menu, dateliv, prix, adresse) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO Commande (menu, dateliv, prix, adresse) VALUES (?, ?, ?, ?)";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
             ps.setArray(1, (Array) commande.getMenu());

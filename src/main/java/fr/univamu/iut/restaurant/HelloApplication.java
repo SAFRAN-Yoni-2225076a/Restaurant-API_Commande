@@ -25,8 +25,8 @@ public class HelloApplication extends Application {
 
         try {
             db = new CommandeRepositoryMariaDB(
-                    "jdbc:mariadb://mysql-archilogicieltibo.alwaysdata.net/archilogicieltibo_restaurantmenu",
-                    "345226_menu", "Deliveroo$");
+                    "jdbc:mariadb://mysql-yonisafran.alwaysdata.net/yonisafran_annonce_bd",
+                    "345222_commande", "Chat_123456789");
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }

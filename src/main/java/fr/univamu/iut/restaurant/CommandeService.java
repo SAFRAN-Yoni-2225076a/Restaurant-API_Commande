@@ -58,7 +58,7 @@ public class CommandeService {
     public String getCommandeJSON(String adresse) throws SQLException, ClassNotFoundException {
         commandeRepo = new CommandeRepositoryMariaDB(
                 "jdbc:mariadb://mysql-yonisafran.alwaysdata.net/yonisafran_restaurantCommande",
-                "345222_commande", "Deliveroo$");
+                "345222_commande", "Chat_123456789");
         String result = null;
         Commande myCommande = commandeRepo.getCommande(adresse);
 

@@ -38,7 +38,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
             ResultSet result = ps.executeQuery();
 
             if (result.next()) {
-                ArrayList<Integer> menu = (ArrayList<Integer>) result.getArray("menu");
+                String menu = result.getString("menu");
                 Date livraison_date = result.getDate("dateLiv");
                 double prix = result.getDouble("prix");
 
@@ -63,7 +63,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
             listCommandes = new ArrayList<>();
 
             while (result.next()) {
-                ArrayList<Integer> menu = (ArrayList<Integer>) result.getArray("menu");
+                String menu = result.getString("menu");
                 Date livraison_date = result.getDate("dateLiv");
                 double prix = result.getDouble("prix");
                 String adresse = result.getString("adresse");
@@ -81,12 +81,12 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
 
 
     @Override
-    public boolean updateCommande(ArrayList<Integer> menu, Date livraison_date, double prix, String adresse) {
+    public boolean updateCommande(String menu, Date livraison_date, double prix, String adresse) {
 
         String query = "UPDATE Commande SET menu=?, dateLiv=?, prix=? WHERE adresse=?";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
-            ps.setArray(1, (Array) menu);
+            ps.setString(1,  menu);
             ps.setDate(2, (java.sql.Date) livraison_date);
             ps.setDouble(3, prix);
 
@@ -122,7 +122,7 @@ public class CommandeRepositoryMariaDB implements CommandeRepositoryInterface, C
         String query = "INSERT INTO Commande (menu, dateliv, prix, adresse) VALUES (?, ?, ?, ?)";
 
         try (PreparedStatement ps = dbConnection.prepareStatement(query)) {
-            ps.setArray(1, (Array) commande.getMenu());
+            ps.setString(1, commande.getMenu());
             ps.setDate(2, (java.sql.Date) commande.getLivraison_date());
             ps.setDouble(3, commande.getPrix());
             ps.setString(4, commande.getAdresse());

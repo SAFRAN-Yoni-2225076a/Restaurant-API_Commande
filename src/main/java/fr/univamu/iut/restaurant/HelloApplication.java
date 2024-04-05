@@ -25,7 +25,7 @@ public class HelloApplication extends Application {
 
         try {
             db = new CommandeRepositoryMariaDB(
-                    "jdbc:mariadb://mysql-yonisafran.alwaysdata.net/yonisafran_annonce_bd",
+                    "jdbc:mariadb://mysql-yonisafran.alwaysdata.net/yonisafran_annonces_db",
                     "345222_commande", "Chat_123456789");
         } catch (Exception e) {
             System.err.println(e.getMessage());

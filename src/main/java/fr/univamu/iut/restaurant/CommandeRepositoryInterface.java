@@ -11,7 +11,7 @@ public interface CommandeRepositoryInterface {
 
     ArrayList<Commande> getAllCommande();
 
-    boolean updateCommande(ArrayList<Integer> menu, Date livraison_date, double prix, String adresse);
+    boolean updateCommande(String menu, Date livraison_date, double prix, String adresse);
 
     boolean deleteCommande(String adresse);
 

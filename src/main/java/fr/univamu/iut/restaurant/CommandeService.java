@@ -33,19 +33,19 @@ public class CommandeService {
      * @return une chaîne de caractère contenant les informations au format JSON
      */
     public String getAllCommandeJSON() {
-
         ArrayList<Commande> allCommandes = commandeRepo.getAllCommande();
-
-        // Création du JSON et conversion de la liste de menus
         String result = null;
         try (Jsonb jsonb = JsonbBuilder.create()) {
             result = jsonb.toJson(allCommandes);
         } catch (Exception e) {
-            System.err.println(e.getMessage());
+            // Gérer l'erreur correctement, par exemple journaliser l'erreur
+            System.err.println("Erreur lors de la conversion en JSON : " + e.getMessage());
+            // Retourner une réponse d'erreur appropriée à l'appelant
+            return "{\"error\": \"Erreur lors de la conversion en JSON\"}";
         }
-
         return result;
     }
+
 
     /*
      * Méthode retournant au format JSON les informations sur une commande recherché
@@ -57,7 +57,7 @@ public class CommandeService {
 
     public String getCommandeJSON(String adresse) throws SQLException, ClassNotFoundException {
         commandeRepo = new CommandeRepositoryMariaDB(
-                "jdbc:mariadb://mysql-yonisafran.alwaysdata.net/yonisafran_restaurantCommande",
+                "jdbc:mariadb://mysql-yonisafran.alwaysdata.net/yonisafran_annonces_db",
                 "345222_commande", "Chat_123456789");
         String result = null;
         Commande myCommande = commandeRepo.getCommande(adresse);
@@ -84,7 +84,7 @@ public class CommandeService {
      * @return true si le menu a pu être mis à jours
      */
     public boolean updateCommande(String adresse, Commande commande) {
-        return commandeRepo.updateCommande((ArrayList<Integer>) commande.getMenu(), commande.getLivraison_date(), commande.getPrix(),  adresse);
+        return commandeRepo.updateCommande( commande.getMenu(), commande.getLivraison_date(), commande.getPrix(),  adresse);
     }
 
     public boolean deleteCommande(String adresse){
